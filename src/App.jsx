@@ -1,5 +1,7 @@
 // src/App.jsx
 import Kart from './components/Kart.jsx'
+import Sayac from './components/Sayac.jsx'
+import ProfilKart from './components/ProfilKart.jsx'
 
 function App() {
   return (
@@ -19,8 +21,15 @@ function App() {
 
         resimUrl="https://placehold.co/300x200?text=JSX"
       />
+
+      <ProfilKart
+        
+      />
     </div>
   )
+
+
+
 }
 
 
