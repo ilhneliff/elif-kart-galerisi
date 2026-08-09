@@ -1,45 +1,27 @@
 // src/App.jsx
+// src/App.jsx
 import Kart from './components/Kart.jsx'
-import Sayac from './components/Sayac.jsx'
-import ProfilKart from './components/ProfilKart.jsx'
-import GorevListesi from './components/GorevListesi.jsx'
+import { projeler } from './data.js'
+import './App.css'
 
 function App() {
   return (
-    <div className="galeri">
-      <Kart
-        baslik="React"
-        aciklama="Bileşen tabanlı bir arayüz kütüphanesi"
-        resimUrl="https://placehold.co/300x200?text=React"
-      />
-      <Kart
-        baslik="Vite"
-        aciklama="Hızlı geliştirme sunucusu ve build aracı"
-        resimUrl="https://placehold.co/300x200?text=Vite"
-      />
-      <Kart
-        baslik="JSX"
-
-        resimUrl="https://placehold.co/300x200?text=JSX"
-      />
-
-      <Sayac
-
-      />
-
-      <ProfilKart
-        
-      />
-
-      <GorevListesi
-      />
+    <div className="sayfa">
+      <h1>Elif'in Proje Galerisi</h1>
+      <div className="galeri">
+        {projeler.map((p) => (
+          <Kart
+            key={p.id}
+            baslik={p.baslik}
+            aciklama={p.aciklama}
+            resimUrl={p.resimUrl}
+            etiket={p.etiket}
+          />
+        ))}
+      </div>
     </div>
   )
-
-
-
 }
-
 
 
 export default App
