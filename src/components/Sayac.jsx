@@ -3,7 +3,7 @@ import { useState } from 'react'
 function Sayac() {
     const [sayi, setSayi] = useState(0)
 
-    const artir = () => etSayi(oncekiSayi => oncekiSayi + 1)
+    const artir = () => setSayi(oncekiSayi => oncekiSayi + 1)
     const azalt = () => setSayi(sayi - 1)
     const sifirla = () => setSayi(0)
 

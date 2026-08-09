@@ -22,6 +22,10 @@ function App() {
         resimUrl="https://placehold.co/300x200?text=JSX"
       />
 
+      <Sayac
+
+      />
+
       <ProfilKart
         
       />
