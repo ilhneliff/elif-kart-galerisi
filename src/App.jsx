@@ -2,6 +2,7 @@
 import Kart from './components/Kart.jsx'
 import Sayac from './components/Sayac.jsx'
 import ProfilKart from './components/ProfilKart.jsx'
+import GorevListesi from './components/GorevListesi.jsx'
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
       <ProfilKart
         
+      />
+
+      <GorevListesi
       />
     </div>
   )
